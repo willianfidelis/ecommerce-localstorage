@@ -37,7 +37,7 @@ function controller(key, obj) {
         remove: function (item) {
             change(item, function () {
                 var index = lista.findIndex(p => p.id === item.id);
-                lista = lista.splice(index);
+                lista = lista.splice(index, 1);
             });
         },
         update: function (item) {
