@@ -23,15 +23,22 @@
                 <small id="nomeHelp" class="form-text text-muted">Digite o seu nome, temos um campo para o sobrenome.</small>
             </div>
             <div class="form-group">
-                <label for="txtSobreNome">Nome</label>
+                <label for="txtSobreNome">Sobrenome</label>
                 <input type="text" class="form-control" id="txtSobreNome" aria-describedby="sobreNomeHelp" placeholder="Sobrenome">
                 <small id="sobreNomeHelp" class="form-text text-muted">Digite o seu sobrenome.</small>
             </div>
+            <div class="form-group">
+                <label for="txtDataNascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" id="txtDataNascimento" aria-describedby="dataNascimentoHelp" placeholder="Data de Nascimento">
+                <small id="dataNascimentoHelp" class="form-text text-muted">Informe a data de nascimento.</small>
+            </div>
             <button id="btnSalvar" type="submit" class="btn btn-primary">Salvar</button>
+            <a href="../">Lista</a>
         </form>
     </main>
+    <script src="../../js/controller.js"></script>
+    <script src="../../js/utils/guid.js"></script>
     <script src="../../js/models/Pessoa.js"></script>
-    <script src="../../js/controllers/pessoas.js"></script>
     <script src="../../js/views/pessoas/criar.js"></script>
 </body>
 

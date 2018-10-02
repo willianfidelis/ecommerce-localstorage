@@ -1,9 +1,9 @@
-var Pessoa = (function () {
-    var id = 1
-    return function Pessoa(nome, sobreNome) {
-        this.id = id++;
-        this.nome = nome;
-        this.sobreNome = sobreNome;
-    }    
-})();
+function Pessoa(o) {
+    this.id = o.id || guid();
+    o = o || {};
+    this.nome = o.nome;
+    this.sobreNome = o.sobreNome;
+    this.dataNascimento = o.dataNascimento;
+}
 
+var pessoasController = controller('pessoas', Pessoa);
